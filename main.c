@@ -1,11 +1,11 @@
-// gcc main.c -o bin/hashme -lm
+// gcc main.c -o bin/hashme -lm -ggdb
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
 double hashme(double input) {
-  return pow(input, 4) + log(input + 3);
+  return powl(input, 4) + logl(input + 3);
 }
 
 int main(int argc, char** argv) {
